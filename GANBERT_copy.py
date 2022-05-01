@@ -10,11 +10,15 @@
 # **NOTE**: given that this implementation is different from the original one in Tensorflow, some results can be slighty different.
 # 
 
+# Let's GO!
+# 
+# Required Imports.
+
+# In[1]:
 
 
 #get_ipython().system('pip install transformers==4.3.2')
 import torch
-import pandas as pd
 import io
 import torch.nn.functional as F
 import random
@@ -37,6 +41,8 @@ if torch.cuda.is_available():
   torch.cuda.manual_seed_all(seed_val)
 
 
+# In[2]:
+
 
 # If there's a GPU available...
 if torch.cuda.is_available():    
@@ -51,6 +57,10 @@ else:
 
 
 # ### Input Parameters
+# 
+
+# In[3]:
+
 
 #--------------------------------
 #  Transformer parameters
@@ -109,12 +119,9 @@ model_name = "bert-base-cased"
 #get_ipython().system(' git clone https://github.com/crux82/ganbert')
 
 #  NOTE: in this setting 50 classes are involved
-# labeled_file = "./ganbert/data/labeled.tsv"
-# unlabeled_file = "./ganbert/data/unlabeled.tsv"
-# test_filename = "./ganbert/data/test.tsv"
-
-twitter_labeled_file = "./labeled_temp.csv"
-twitter_test_file = "./test.csv"
+labeled_file = "./data/labeled.tsv"
+unlabeled_file = "./data/unlabeled.tsv"
+test_filename = "./data/test.tsv"
 
 label_list = ["UNK_UNK","ABBR_abb", "ABBR_exp", "DESC_def", "DESC_desc", 
               "DESC_manner", "DESC_reason", "ENTY_animal", "ENTY_body", 
@@ -129,17 +136,20 @@ label_list = ["UNK_UNK","ABBR_abb", "ABBR_exp", "DESC_def", "DESC_desc",
               "NUM_perc", "NUM_period", "NUM_speed", "NUM_temp", "NUM_volsize", 
               "NUM_weight"]
 
-twitter_label_list = ["0_0", "2_2", "4_4"]
-twitter_column_names = ['polarity', 'id', 'date', 'query', 'user', 'text']
-
 
 # Load the Tranformer Model
+
+# In[4]:
+
 
 transformer = AutoModel.from_pretrained(model_name)
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 
 # Function required to load the dataset
+
+# In[5]:
+
 
 def get_qc_examples(input_file):
   """Creates examples for the training and dev sets."""
@@ -160,26 +170,22 @@ def get_qc_examples(input_file):
 
   return examples
 
-# Load Twitter CSV dataset
 
-def get_twitter_examples(input_file):
-  examples = []
+# **Load** the input QC dataset (fine-grained)
 
-  df = pd.read_csv(input_file, names=twitter_column_names, encoding='latin-1')
-  df = df.drop(columns=['id', 'date', 'query', 'user'])
+# In[6]:
 
-  for text, polarity in zip(df['text'], df['polarity']):
-    modified_polarity = str(polarity) + "_" + str(polarity)
-    examples.append((text, str(modified_polarity)))
 
-  return examples
+#Load the examples
+labeled_examples = get_qc_examples(labeled_file)
+unlabeled_examples = get_qc_examples(unlabeled_file)
+test_examples = get_qc_examples(test_filename)
 
-#Load twitter examples
-twitter_labeled_examples = get_twitter_examples(twitter_labeled_file)
-# twitter_unlabeled_examples = get_twitter_examples(unlabeled_file)
-twitter_test_examples = get_twitter_examples(twitter_test_file)
 
 # Functions required to convert examples into Dataloader
+
+# In[7]:
+
 
 def generate_data_loader(input_examples, label_masks, label_map, do_shuffle = False, balance_label_examples = False):
   '''
@@ -210,8 +216,6 @@ def generate_data_loader(input_examples, label_masks, label_map, do_shuffle = Fa
           examples.append((ex, label_masks[index]))
       else:
         examples.append((ex, label_masks[index]))
-  
-  print(examples[0])
   
   #-----------------------------------------------
   # Generate input examples to the Transformer
@@ -264,43 +268,39 @@ def format_time(elapsed):
 
 # Convert the input examples into DataLoader
 
-# Get Label Map
-def get_label_map():
-  label_map = {}
-  for (i, label) in enumerate(twitter_label_list):
-    label_map[label] = i
-  
-  return label_map
+# In[8]:
 
-label_map = get_label_map()
 
+label_map = {}
+for (i, label) in enumerate(label_list):
+  label_map[label] = i
 #------------------------------
 #   Load the train dataset
 #------------------------------
-
-train_examples = twitter_labeled_examples
+train_examples = labeled_examples
 #The labeled (train) dataset is assigned with a mask set to True
-train_label_masks = np.ones(len(twitter_labeled_examples), dtype=bool)
+train_label_masks = np.ones(len(labeled_examples), dtype=bool)
 #If unlabel examples are available
-# if unlabeled_examples:
-#   train_examples = train_examples + unlabeled_examples
-#   #The unlabeled (train) dataset is assigned with a mask set to False
-#   tmp_masks = np.zeros(len(unlabeled_examples), dtype=bool)
-#   train_label_masks = np.concatenate([train_label_masks,tmp_masks])
+if unlabeled_examples:
+  train_examples = train_examples + unlabeled_examples
+  #The unlabeled (train) dataset is assigned with a mask set to False
+  tmp_masks = np.zeros(len(unlabeled_examples), dtype=bool)
+  train_label_masks = np.concatenate([train_label_masks,tmp_masks])
 
 train_dataloader = generate_data_loader(train_examples, train_label_masks, label_map, do_shuffle = True, balance_label_examples = apply_balance)
-
-
 
 #------------------------------
 #   Load the test dataset
 #------------------------------
+#The labeled (test) dataset is assigned with a mask set to True
+test_label_masks = np.ones(len(test_examples), dtype=bool)
 
-test_label_masks = np.ones(len(twitter_test_examples), dtype=bool)
+test_dataloader = generate_data_loader(test_examples, test_label_masks, label_map, do_shuffle = False, balance_label_examples = False)
 
-test_dataloader = generate_data_loader(twitter_test_examples, test_label_masks, label_map, do_shuffle = False, balance_label_examples = False)
 
 # We define the Generator and Discriminator as discussed in https://www.aclweb.org/anthology/2020.acl-main.191/
+
+# In[9]:
 
 
 #------------------------------
@@ -351,6 +351,8 @@ class Discriminator(nn.Module):
 
 # We instantiate the Discriminator and Generator
 
+# In[10]:
+
 
 # The config file is required to get the dimension of the vector produced by 
 # the underlying transformer
@@ -364,7 +366,7 @@ hidden_levels_d = [hidden_size for i in range(0, num_hidden_layers_d)]
 #   Instantiate the Generator and Discriminator
 #-------------------------------------------------
 generator = Generator(noise_size=noise_size, output_size=hidden_size, hidden_sizes=hidden_levels_g, dropout_rate=out_dropout_rate)
-discriminator = Discriminator(input_size=hidden_size, hidden_sizes=hidden_levels_d, num_labels=len(twitter_label_list), dropout_rate=out_dropout_rate)
+discriminator = Discriminator(input_size=hidden_size, hidden_sizes=hidden_levels_d, num_labels=len(label_list), dropout_rate=out_dropout_rate)
 
 # Put everything in the GPU if available
 if torch.cuda.is_available():    
@@ -378,6 +380,8 @@ if torch.cuda.is_available():
 
 
 # Let's go with the training procedure
+
+# In[11]:
 
 
 training_stats = []
@@ -490,7 +494,7 @@ for epoch_i in range(0, num_train_epochs):
         log_probs = F.log_softmax(logits, dim=-1)
         # The discriminator provides an output for labeled and unlabeled real data
         # so the loss evaluated for unlabeled data is ignored (masked)
-        label2one_hot = torch.nn.functional.one_hot(b_labels, len(twitter_label_list))
+        label2one_hot = torch.nn.functional.one_hot(b_labels, len(label_list))
         per_example_loss = -torch.sum(label2one_hot * log_probs, dim=-1)
         per_example_loss = torch.masked_select(per_example_loss, b_label_mask.to(device))
         labeled_example_count = per_example_loss.type(torch.float32).numel()
@@ -630,10 +634,12 @@ for epoch_i in range(0, num_train_epochs):
     )
 
 
+# In[12]:
+
+
 for stat in training_stats:
   print(stat)
 
 print("\nTraining complete!")
 
 print("Total training took {:} (h:mm:ss)".format(format_time(time.time()-total_t0)))
-
