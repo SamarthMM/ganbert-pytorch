@@ -129,7 +129,7 @@ label_list = ["UNK_UNK","ABBR_abb", "ABBR_exp", "DESC_def", "DESC_desc",
               "NUM_perc", "NUM_period", "NUM_speed", "NUM_temp", "NUM_volsize", 
               "NUM_weight"]
 
-twitter_label_list = ["0_0", "2_2", "4_4"]
+twitter_label_list = ["0_0", "1_1", "2_2", "4_4"]
 twitter_column_names = ['polarity', 'id', 'date', 'query', 'user', 'text']
 
 
@@ -174,8 +174,30 @@ def get_twitter_examples(input_file):
 
   return examples
 
+def get_twitter_labeled_unlabeled(input_file):
+  df = pd.read_csv(input_file, names=twitter_column_names, encoding='latin-1')
+  df = df.drop(columns=['id', 'date', 'query', 'user'])
+
+  df['split'] = np.random.randn(df.shape[0], 1)
+  msk = np.random.rand(len(df)) <= 0.7
+
+  labeled = df[~msk]
+  unlabeled = df[msk]
+
+  labeled_examples = []
+  unlabeled_examples = []
+
+  for text, polarity in zip(labeled['text'], labeled['polarity']):
+    modified_polarity = str(polarity) + "_" + str(polarity)
+    labeled_examples.append((text, str(modified_polarity)))
+
+  for text, polarity in zip(unlabeled['text'], unlabeled['polarity']):
+    unlabeled_examples.append((text, str("1_1")))
+
+  return labeled_examples, unlabeled_examples
+
 #Load twitter examples
-twitter_labeled_examples = get_twitter_examples(twitter_labeled_file)
+twitter_labeled_examples, twitter_unlabeled_examples = get_twitter_labeled_unlabeled(twitter_labeled_file)
 # twitter_unlabeled_examples = get_twitter_examples(unlabeled_file)
 twitter_test_examples = get_twitter_examples(twitter_test_file)
 
@@ -282,11 +304,11 @@ train_examples = twitter_labeled_examples
 #The labeled (train) dataset is assigned with a mask set to True
 train_label_masks = np.ones(len(twitter_labeled_examples), dtype=bool)
 #If unlabel examples are available
-# if unlabeled_examples:
-#   train_examples = train_examples + unlabeled_examples
-#   #The unlabeled (train) dataset is assigned with a mask set to False
-#   tmp_masks = np.zeros(len(unlabeled_examples), dtype=bool)
-#   train_label_masks = np.concatenate([train_label_masks,tmp_masks])
+if twitter_unlabeled_examples:
+  train_examples = train_examples + twitter_unlabeled_examples
+  #The unlabeled (train) dataset is assigned with a mask set to False
+  tmp_masks = np.zeros(len(twitter_unlabeled_examples), dtype=bool)
+  train_label_masks = np.concatenate([train_label_masks,tmp_masks])
 
 train_dataloader = generate_data_loader(train_examples, train_label_masks, label_map, do_shuffle = True, balance_label_examples = apply_balance)
 
