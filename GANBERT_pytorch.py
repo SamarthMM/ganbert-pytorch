@@ -135,7 +135,7 @@ label_list = ["UNK_UNK","ABBR_abb", "ABBR_exp", "DESC_def", "DESC_desc",
               "NUM_perc", "NUM_period", "NUM_speed", "NUM_temp", "NUM_volsize", 
               "NUM_weight"]
 
-twitter_label_list = ["0_0", "1_1", "2_2", "4_4"]
+twitter_label_list = ["0_0", "1_1", "4_4"]
 twitter_column_names = ['polarity', 'id', 'date', 'query', 'user', 'text']
 
 
@@ -173,6 +173,7 @@ def get_twitter_examples(input_file):
 
   df = pd.read_csv(input_file, names=twitter_column_names, encoding='latin-1')
   df = df.drop(columns=['id', 'date', 'query', 'user'])
+  df = df[df['polarity'] != 2]
 
   for text, polarity in zip(df['text'], df['polarity']):
     modified_polarity = str(polarity) + "_" + str(polarity)
