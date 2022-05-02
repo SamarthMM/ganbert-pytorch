@@ -14,6 +14,7 @@
 
 #get_ipython().system('pip install transformers==4.3.2')
 import torch
+import argparse
 import pandas as pd
 import io
 import torch.nn.functional as F
@@ -37,6 +38,11 @@ if torch.cuda.is_available():
   torch.cuda.manual_seed_all(seed_val)
 
 
+#first get args
+cli_parser = argparse.ArgumentParser()
+cli_parser.add_argument("--unlabeled_ratio", type=float, required=True, help="ratio of unlabaled to labeled data")
+args=cli_parser.parse_args()
+print("Label ratio: ",args.unlabeled_ratio)
 
 # If there's a GPU available...
 if torch.cuda.is_available():    
@@ -82,7 +88,7 @@ apply_balance = True
 learning_rate_discriminator = 5e-5
 learning_rate_generator = 5e-5
 epsilon = 1e-8
-num_train_epochs = 10
+num_train_epochs = 30
 multi_gpu = True
 # Scheduler
 apply_scheduler = False
@@ -174,12 +180,12 @@ def get_twitter_examples(input_file):
 
   return examples
 
-def get_twitter_labeled_unlabeled(input_file):
+def get_twitter_labeled_unlabeled(args,input_file):
   df = pd.read_csv(input_file, names=twitter_column_names, encoding='latin-1')
   df = df.drop(columns=['id', 'date', 'query', 'user'])
 
   df['split'] = np.random.randn(df.shape[0], 1)
-  msk = np.random.rand(len(df)) <= 0.7
+  msk = np.random.rand(len(df)) <= args.unlabeled_ratio#0.7
 
   labeled = df[~msk]
   unlabeled = df[msk]
@@ -197,7 +203,7 @@ def get_twitter_labeled_unlabeled(input_file):
   return labeled_examples, unlabeled_examples
 
 #Load twitter examples
-twitter_labeled_examples, twitter_unlabeled_examples = get_twitter_labeled_unlabeled(twitter_labeled_file)
+twitter_labeled_examples, twitter_unlabeled_examples = get_twitter_labeled_unlabeled(args,twitter_labeled_file)
 # twitter_unlabeled_examples = get_twitter_examples(unlabeled_file)
 twitter_test_examples = get_twitter_examples(twitter_test_file)
 

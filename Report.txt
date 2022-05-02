@@ -1,0 +1,20 @@
+#What does this paper want to achieve
+
+
+
+#Expermients
+1. We have a large twitter dataset of 1.6M examples
+2. Usually most data retrieved from the internet for emotion classification is unlabeled but we still need to classify emotions. How to achieve this with limited labeled data?
+3. We can use a GAN network on top of an LM model (BERT). According to  this paper https://www.aclweb.org/anthology/2020.acl-main.191/ we can train a GAN model with limited lebeled data and still get good results.
+4. Generator tries to 
+	a) Feature Matching: make fake data as close to real data as possisble
+	b) Unsupervised: fool the discriminator
+5. Discriminator tries to:
+	a)Supervised: Correctly predict the emotion labels for data that has labels
+	b)Unsupervised: For all data, irrespective of labels, check whether it correctly discriminiated between fake and real data
+
+Now, we plan to see the affect of number of labeled data available to GAN. We test the performance of the model with different ratios of unlabeled to labeled data (r). If r is large, we have more unlabeled data.
+
+We check performance for
+r=[0.1,0.2,..,1]
+
