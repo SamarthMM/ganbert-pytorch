@@ -119,7 +119,7 @@ model_name = "bert-base-cased"
 # unlabeled_file = "./ganbert/data/unlabeled.tsv"
 # test_filename = "./ganbert/data/test.tsv"
 
-twitter_labeled_file = "./labeled_temp.csv"
+twitter_labeled_file = "./labeled_8000.csv"
 twitter_test_file = "./test.csv"
 
 label_list = ["UNK_UNK","ABBR_abb", "ABBR_exp", "DESC_def", "DESC_desc", 
