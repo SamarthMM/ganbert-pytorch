@@ -29,6 +29,7 @@ from torch.utils.data import TensorDataset, DataLoader, RandomSampler, Sequentia
 #!pip install torch==1.7.1+cu101 torchvision==0.8.2+cu101 -f https://download.pytorch.org/whl/torch_stable.html
 #!pip install sentencepiece
 
+
 ##Set random values
 seed_val = 42
 random.seed(seed_val)
@@ -41,8 +42,11 @@ if torch.cuda.is_available():
 #first get args
 cli_parser = argparse.ArgumentParser()
 cli_parser.add_argument("--unlabeled_ratio", type=float, required=True, help="ratio of unlabaled to labeled data")
+cli_parser.add_argument("--train_file", type=str, required=True, help="training data file")
 args=cli_parser.parse_args()
 print("Label ratio: ",args.unlabeled_ratio)
+print("training file: ",args.train_file)
+
 
 # If there's a GPU available...
 if torch.cuda.is_available():    
@@ -126,8 +130,8 @@ model_name = "bert-base-cased"
 # convert_tsv_to_csv("./goemo_train.tsv", "./goemo_train.csv")
 # convert_tsv_to_csv("./goemo_test.tsv", "./goemo_test.csv")
 
-goemo_labeled_file = './goemo_train.csv'
-goemo_test_file = './goemo_test.csv'
+goemo_labeled_file = args.train_file #'./goemo_train_4000.csv'
+goemo_test_file = './goemo_test_400.csv'
 
 goemo_label_list = ["0_0", "1_1", "2_2", "3_3", "4_4"]
 goemo_column_names = ['text', 'polarity']
@@ -157,6 +161,7 @@ def get_goemo_labeled_unlabeled(args,input_file):
   df = pd.read_csv(input_file, names=goemo_column_names, encoding='latin-1')
 
   df['split'] = np.random.randn(df.shape[0], 1)
+  print('ratio: unlabaled data : labaled data = ',args.unlabeled_ratio)
   msk = np.random.rand(len(df)) <= args.unlabeled_ratio#0.7
 
   labeled = df[~msk]
@@ -603,6 +608,7 @@ for epoch_i in range(0, num_train_epochs):
     all_preds = torch.stack(all_preds).numpy()
     all_labels_ids = torch.stack(all_labels_ids).numpy()
     test_accuracy = np.sum(all_preds == all_labels_ids) / len(all_preds)
+
     print("  Accuracy: {0:.3f}".format(test_accuracy))
 
     # Calculate the average loss over all of the batches.
