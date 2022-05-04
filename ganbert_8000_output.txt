@@ -1,5 +1,6 @@
 Testing GANBERT for ratio 0.1
 Label ratio:  0.1
+training file:  ganbert_8000.csv
 There are 2 GPU(s) available.
 We will use the GPU: NVIDIA GeForce RTX 3090
 (("is upset that he can't update his Facebook by texting it... and might cry as a result  School today also. Blah!", '0_0'), True)
@@ -3124,3 +3125,1581 @@ Running Test...
 
 Training complete!
 Total training took 0:26:43 (h:mm:ss)
+Label ratio:  0.98
+training file:  labeled_8000.csv
+There are 2 GPU(s) available.
+We will use the GPU: NVIDIA GeForce RTX 3090
+(("@Henkuyinepu it's overrated ", '0_0'), True)
+(('@stellargirl I loooooooovvvvvveee my Kindle2. Not that the DX is cool, but the 2 is fantastic in its own right.', '4_4'), True)
+
+======== Epoch 1 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:06.
+  Batch    20  of    136.    Elapsed: 0:00:10.
+  Batch    30  of    136.    Elapsed: 0:00:13.
+  Batch    40  of    136.    Elapsed: 0:00:16.
+  Batch    50  of    136.    Elapsed: 0:00:20.
+  Batch    60  of    136.    Elapsed: 0:00:23.
+  Batch    70  of    136.    Elapsed: 0:00:27.
+  Batch    80  of    136.    Elapsed: 0:00:30.
+  Batch    90  of    136.    Elapsed: 0:00:34.
+  Batch   100  of    136.    Elapsed: 0:00:37.
+  Batch   110  of    136.    Elapsed: 0:00:41.
+  Batch   120  of    136.    Elapsed: 0:00:44.
+  Batch   130  of    136.    Elapsed: 0:00:48.
+
+  Average training loss generetor: 0.721
+  Average training loss discriminator: 1.241
+  Training epcoh took: 0:00:50
+
+Running Test...
+  Accuracy: 0.794
+  Test Loss: 0.627
+  Test took: 0:00:01
+
+======== Epoch 2 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:03.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.712
+  Average training loss discriminator: 0.753
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.797
+  Test Loss: 0.954
+  Test took: 0:00:01
+
+======== Epoch 3 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:03.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.703
+  Average training loss discriminator: 0.717
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.808
+  Test Loss: 1.254
+  Test took: 0:00:01
+
+======== Epoch 4 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:03.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.701
+  Average training loss discriminator: 0.711
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.808
+  Test Loss: 1.503
+  Test took: 0:00:01
+
+======== Epoch 5 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:03.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.699
+  Average training loss discriminator: 0.709
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.816
+  Test Loss: 1.648
+  Test took: 0:00:01
+
+======== Epoch 6 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:03.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.698
+  Average training loss discriminator: 0.706
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.819
+  Test Loss: 1.783
+  Test took: 0:00:01
+
+======== Epoch 7 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:03.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.713
+  Average training loss discriminator: 1.070
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.738
+  Test Loss: 0.773
+  Test took: 0:00:01
+
+======== Epoch 8 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:03.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.710
+  Average training loss discriminator: 0.860
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.772
+  Test Loss: 1.310
+  Test took: 0:00:01
+
+======== Epoch 9 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:03.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.701
+  Average training loss discriminator: 0.711
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.760
+  Test Loss: 1.704
+  Test took: 0:00:01
+
+======== Epoch 10 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:03.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.699
+  Average training loss discriminator: 0.707
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.769
+  Test Loss: 1.932
+  Test took: 0:00:01
+
+======== Epoch 11 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:03.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.699
+  Average training loss discriminator: 0.728
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.769
+  Test Loss: 1.737
+  Test took: 0:00:01
+
+======== Epoch 12 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:03.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.702
+  Average training loss discriminator: 0.785
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.705
+  Test Loss: 0.977
+  Test took: 0:00:01
+
+======== Epoch 13 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:03.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.702
+  Average training loss discriminator: 0.747
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.747
+  Test Loss: 1.659
+  Test took: 0:00:01
+
+======== Epoch 14 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:03.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.699
+  Average training loss discriminator: 0.706
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.755
+  Test Loss: 1.872
+  Test took: 0:00:01
+
+======== Epoch 15 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:04.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.699
+  Average training loss discriminator: 0.704
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.758
+  Test Loss: 2.097
+  Test took: 0:00:01
+
+======== Epoch 16 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:03.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.698
+  Average training loss discriminator: 0.703
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.772
+  Test Loss: 2.069
+  Test took: 0:00:01
+
+======== Epoch 17 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:03.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.698
+  Average training loss discriminator: 0.702
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.760
+  Test Loss: 2.289
+  Test took: 0:00:01
+
+======== Epoch 18 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:03.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.697
+  Average training loss discriminator: 0.701
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.758
+  Test Loss: 2.457
+  Test took: 0:00:01
+
+======== Epoch 19 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:03.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.698
+  Average training loss discriminator: 0.701
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.752
+  Test Loss: 2.699
+  Test took: 0:00:01
+
+======== Epoch 20 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:03.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.698
+  Average training loss discriminator: 0.700
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.752
+  Test Loss: 2.629
+  Test took: 0:00:01
+
+======== Epoch 21 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:03.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.698
+  Average training loss discriminator: 0.716
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.738
+  Test Loss: 2.470
+  Test took: 0:00:01
+
+======== Epoch 22 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:03.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.697
+  Average training loss discriminator: 0.711
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.752
+  Test Loss: 2.404
+  Test took: 0:00:01
+
+======== Epoch 23 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:03.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.696
+  Average training loss discriminator: 0.701
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.763
+  Test Loss: 2.456
+  Test took: 0:00:01
+
+======== Epoch 24 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:03.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.698
+  Average training loss discriminator: 0.700
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.760
+  Test Loss: 2.520
+  Test took: 0:00:01
+
+======== Epoch 25 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:03.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.719
+  Average training loss discriminator: 1.271
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.493
+  Test Loss: 0.713
+  Test took: 0:00:01
+
+======== Epoch 26 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:03.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.710
+  Average training loss discriminator: 1.434
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.493
+  Test Loss: 0.704
+  Test took: 0:00:01
+
+======== Epoch 27 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:03.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.706
+  Average training loss discriminator: 1.414
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.493
+  Test Loss: 0.699
+  Test took: 0:00:01
+
+======== Epoch 28 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:03.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.705
+  Average training loss discriminator: 1.410
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.507
+  Test Loss: 0.706
+  Test took: 0:00:01
+
+======== Epoch 29 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:03.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.704
+  Average training loss discriminator: 1.407
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.507
+  Test Loss: 0.694
+  Test took: 0:00:01
+
+======== Epoch 30 / 30 ========
+Training...
+  Batch    10  of    136.    Elapsed: 0:00:03.
+  Batch    20  of    136.    Elapsed: 0:00:07.
+  Batch    30  of    136.    Elapsed: 0:00:10.
+  Batch    40  of    136.    Elapsed: 0:00:14.
+  Batch    50  of    136.    Elapsed: 0:00:17.
+  Batch    60  of    136.    Elapsed: 0:00:21.
+  Batch    70  of    136.    Elapsed: 0:00:24.
+  Batch    80  of    136.    Elapsed: 0:00:28.
+  Batch    90  of    136.    Elapsed: 0:00:31.
+  Batch   100  of    136.    Elapsed: 0:00:35.
+  Batch   110  of    136.    Elapsed: 0:00:38.
+  Batch   120  of    136.    Elapsed: 0:00:42.
+  Batch   130  of    136.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.703
+  Average training loss discriminator: 1.407
+  Training epcoh took: 0:00:47
+
+Running Test...
+  Accuracy: 0.507
+  Test Loss: 0.695
+  Test took: 0:00:01
+{'epoch': 1, 'Training Loss generator': 0.7214031335623825, 'Training Loss discriminator': 1.2407487902571173, 'Valid. Loss': 0.6267590522766113, 'Valid. Accur.': 0.7938718662952646, 'Training Time': '0:00:50', 'Test Time': '0:00:01'}
+{'epoch': 2, 'Training Loss generator': 0.7116428881007082, 'Training Loss discriminator': 0.7531715162536677, 'Valid. Loss': 0.9542247653007507, 'Valid. Accur.': 0.7966573816155988, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+{'epoch': 3, 'Training Loss generator': 0.7031083637300659, 'Training Loss discriminator': 0.7171433975591379, 'Valid. Loss': 1.2535320520401, 'Valid. Accur.': 0.807799442896936, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+{'epoch': 4, 'Training Loss generator': 0.7009021942229832, 'Training Loss discriminator': 0.7113717088804525, 'Valid. Loss': 1.5029590129852295, 'Valid. Accur.': 0.807799442896936, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+{'epoch': 5, 'Training Loss generator': 0.6987956232007813, 'Training Loss discriminator': 0.7087003514170647, 'Valid. Loss': 1.6477582454681396, 'Valid. Accur.': 0.8161559888579387, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+{'epoch': 6, 'Training Loss generator': 0.6984723780085059, 'Training Loss discriminator': 0.7056606731870595, 'Valid. Loss': 1.7834585905075073, 'Valid. Accur.': 0.8189415041782729, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+{'epoch': 7, 'Training Loss generator': 0.7134267267058877, 'Training Loss discriminator': 1.0695302819504457, 'Valid. Loss': 0.7734105587005615, 'Valid. Accur.': 0.7381615598885793, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+{'epoch': 8, 'Training Loss generator': 0.7097760412622901, 'Training Loss discriminator': 0.8602302543380681, 'Valid. Loss': 1.3103082180023193, 'Valid. Accur.': 0.7715877437325905, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+{'epoch': 9, 'Training Loss generator': 0.7005475987406338, 'Training Loss discriminator': 0.7106473502867362, 'Valid. Loss': 1.7044748067855835, 'Valid. Accur.': 0.7604456824512534, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+{'epoch': 10, 'Training Loss generator': 0.6992831409854048, 'Training Loss discriminator': 0.7074169244836358, 'Valid. Loss': 1.9319989681243896, 'Valid. Accur.': 0.7688022284122563, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+{'epoch': 11, 'Training Loss generator': 0.6987612427157515, 'Training Loss discriminator': 0.7276769701172324, 'Valid. Loss': 1.7368730306625366, 'Valid. Accur.': 0.7688022284122563, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+{'epoch': 12, 'Training Loss generator': 0.7020636621643516, 'Training Loss discriminator': 0.7849936292451971, 'Valid. Loss': 0.9765464663505554, 'Valid. Accur.': 0.7047353760445683, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+{'epoch': 13, 'Training Loss generator': 0.7017706913106582, 'Training Loss discriminator': 0.746800394180943, 'Valid. Loss': 1.6589473485946655, 'Valid. Accur.': 0.7465181058495822, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+{'epoch': 14, 'Training Loss generator': 0.6988776295500643, 'Training Loss discriminator': 0.7060494567541515, 'Valid. Loss': 1.8720672130584717, 'Valid. Accur.': 0.754874651810585, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+{'epoch': 15, 'Training Loss generator': 0.6985461961697129, 'Training Loss discriminator': 0.7039376615601427, 'Valid. Loss': 2.0970964431762695, 'Valid. Accur.': 0.7576601671309192, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+{'epoch': 16, 'Training Loss generator': 0.6982220122042824, 'Training Loss discriminator': 0.7029778164099244, 'Valid. Loss': 2.0687146186828613, 'Valid. Accur.': 0.7715877437325905, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+{'epoch': 17, 'Training Loss generator': 0.6982472622219253, 'Training Loss discriminator': 0.7018930618377293, 'Valid. Loss': 2.2892489433288574, 'Valid. Accur.': 0.7604456824512534, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+{'epoch': 18, 'Training Loss generator': 0.6974157664705726, 'Training Loss discriminator': 0.7011683031040079, 'Valid. Loss': 2.4572856426239014, 'Valid. Accur.': 0.7576601671309192, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+{'epoch': 19, 'Training Loss generator': 0.6978301283191232, 'Training Loss discriminator': 0.701203304616844, 'Valid. Loss': 2.699317693710327, 'Valid. Accur.': 0.7520891364902507, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+{'epoch': 20, 'Training Loss generator': 0.69768806152484, 'Training Loss discriminator': 0.7003732989816105, 'Valid. Loss': 2.6288344860076904, 'Valid. Accur.': 0.7520891364902507, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+{'epoch': 21, 'Training Loss generator': 0.6975023005815113, 'Training Loss discriminator': 0.7158986658734434, 'Valid. Loss': 2.4700393676757812, 'Valid. Accur.': 0.7381615598885793, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+{'epoch': 22, 'Training Loss generator': 0.6968604492790559, 'Training Loss discriminator': 0.7111477006007644, 'Valid. Loss': 2.403843879699707, 'Valid. Accur.': 0.7520891364902507, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+{'epoch': 23, 'Training Loss generator': 0.6962516281534644, 'Training Loss discriminator': 0.7008631948162528, 'Valid. Loss': 2.4558324813842773, 'Valid. Accur.': 0.7632311977715878, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+{'epoch': 24, 'Training Loss generator': 0.6975471118793768, 'Training Loss discriminator': 0.6997446176760337, 'Valid. Loss': 2.519853115081787, 'Valid. Accur.': 0.7604456824512534, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+{'epoch': 25, 'Training Loss generator': 0.7190407514572144, 'Training Loss discriminator': 1.2707633262171465, 'Valid. Loss': 0.7126251459121704, 'Valid. Accur.': 0.49303621169916434, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+{'epoch': 26, 'Training Loss generator': 0.7100120782852173, 'Training Loss discriminator': 1.4343981278293274, 'Valid. Loss': 0.7036105990409851, 'Valid. Accur.': 0.49303621169916434, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+{'epoch': 27, 'Training Loss generator': 0.7057484532980358, 'Training Loss discriminator': 1.413642925374648, 'Valid. Loss': 0.6990033984184265, 'Valid. Accur.': 0.49303621169916434, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+{'epoch': 28, 'Training Loss generator': 0.7046552712426466, 'Training Loss discriminator': 1.4100646955125473, 'Valid. Loss': 0.706080436706543, 'Valid. Accur.': 0.5069637883008357, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+{'epoch': 29, 'Training Loss generator': 0.7044230870464269, 'Training Loss discriminator': 1.4067752067657078, 'Valid. Loss': 0.694005012512207, 'Valid. Accur.': 0.5069637883008357, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+{'epoch': 30, 'Training Loss generator': 0.7034755717305576, 'Training Loss discriminator': 1.407334182630567, 'Valid. Loss': 0.6954028606414795, 'Valid. Accur.': 0.5069637883008357, 'Training Time': '0:00:47', 'Test Time': '0:00:01'}
+
+Training complete!
+Total training took 0:24:05 (h:mm:ss)
+Label ratio:  0.99
+training file:  labeled_8000.csv
+There are 2 GPU(s) available.
+We will use the GPU: NVIDIA GeForce RTX 3090
+(("@RyanSeacrest is it just me, or she hates anoop. i mean seriously, she's kinda mean to him. ", '0_0'), True)
+(('@stellargirl I loooooooovvvvvveee my Kindle2. Not that the DX is cool, but the 2 is fantastic in its own right.', '4_4'), True)
+
+======== Epoch 1 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:06.
+  Batch    20  of    132.    Elapsed: 0:00:10.
+  Batch    30  of    132.    Elapsed: 0:00:13.
+  Batch    40  of    132.    Elapsed: 0:00:16.
+  Batch    50  of    132.    Elapsed: 0:00:20.
+  Batch    60  of    132.    Elapsed: 0:00:23.
+  Batch    70  of    132.    Elapsed: 0:00:27.
+  Batch    80  of    132.    Elapsed: 0:00:30.
+  Batch    90  of    132.    Elapsed: 0:00:34.
+  Batch   100  of    132.    Elapsed: 0:00:37.
+  Batch   110  of    132.    Elapsed: 0:00:41.
+  Batch   120  of    132.    Elapsed: 0:00:44.
+  Batch   130  of    132.    Elapsed: 0:00:48.
+
+  Average training loss generetor: 0.729
+  Average training loss discriminator: 1.242
+  Training epcoh took: 0:00:48
+
+Running Test...
+  Accuracy: 0.724
+  Test Loss: 1.138
+  Test took: 0:00:01
+
+======== Epoch 2 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.721
+  Average training loss discriminator: 0.865
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.699
+  Test Loss: 1.378
+  Test took: 0:00:01
+
+======== Epoch 3 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.704
+  Average training loss discriminator: 0.722
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.688
+  Test Loss: 1.749
+  Test took: 0:00:01
+
+======== Epoch 4 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.702
+  Average training loss discriminator: 0.714
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.719
+  Test Loss: 1.978
+  Test took: 0:00:01
+
+======== Epoch 5 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.700
+  Average training loss discriminator: 0.711
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.721
+  Test Loss: 2.235
+  Test took: 0:00:01
+
+======== Epoch 6 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.700
+  Average training loss discriminator: 0.708
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.744
+  Test Loss: 2.277
+  Test took: 0:00:01
+
+======== Epoch 7 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.702
+  Average training loss discriminator: 0.708
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.685
+  Test Loss: 2.999
+  Test took: 0:00:01
+
+======== Epoch 8 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.706
+  Average training loss discriminator: 0.796
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.691
+  Test Loss: 2.297
+  Test took: 0:00:01
+
+======== Epoch 9 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.699
+  Average training loss discriminator: 0.708
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.694
+  Test Loss: 2.572
+  Test took: 0:00:01
+
+======== Epoch 10 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.698
+  Average training loss discriminator: 0.706
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.710
+  Test Loss: 2.695
+  Test took: 0:00:01
+
+======== Epoch 11 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.699
+  Average training loss discriminator: 0.704
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.708
+  Test Loss: 2.858
+  Test took: 0:00:01
+
+======== Epoch 12 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.699
+  Average training loss discriminator: 0.703
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.702
+  Test Loss: 3.030
+  Test took: 0:00:01
+
+======== Epoch 13 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.698
+  Average training loss discriminator: 0.702
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.708
+  Test Loss: 3.105
+  Test took: 0:00:01
+
+======== Epoch 14 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.699
+  Average training loss discriminator: 0.702
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.710
+  Test Loss: 3.186
+  Test took: 0:00:01
+
+======== Epoch 15 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.698
+  Average training loss discriminator: 0.702
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.713
+  Test Loss: 3.274
+  Test took: 0:00:01
+
+======== Epoch 16 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.700
+  Average training loss discriminator: 0.723
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.716
+  Test Loss: 2.499
+  Test took: 0:00:01
+
+======== Epoch 17 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.712
+  Average training loss discriminator: 0.964
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.577
+  Test Loss: 0.666
+  Test took: 0:00:01
+
+======== Epoch 18 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.716
+  Average training loss discriminator: 0.954
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.591
+  Test Loss: 1.771
+  Test took: 0:00:01
+
+======== Epoch 19 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.703
+  Average training loss discriminator: 0.713
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.599
+  Test Loss: 2.377
+  Test took: 0:00:01
+
+======== Epoch 20 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.710
+  Average training loss discriminator: 0.789
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.602
+  Test Loss: 2.136
+  Test took: 0:00:01
+
+======== Epoch 21 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.701
+  Average training loss discriminator: 0.707
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.599
+  Test Loss: 2.586
+  Test took: 0:00:01
+
+======== Epoch 22 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.699
+  Average training loss discriminator: 0.704
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.596
+  Test Loss: 2.964
+  Test took: 0:00:01
+
+======== Epoch 23 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.698
+  Average training loss discriminator: 0.703
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.591
+  Test Loss: 3.273
+  Test took: 0:00:01
+
+======== Epoch 24 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.698
+  Average training loss discriminator: 0.702
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.599
+  Test Loss: 3.436
+  Test took: 0:00:01
+
+======== Epoch 25 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.697
+  Average training loss discriminator: 0.701
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.596
+  Test Loss: 3.664
+  Test took: 0:00:01
+
+======== Epoch 26 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.697
+  Average training loss discriminator: 0.701
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.593
+  Test Loss: 3.774
+  Test took: 0:00:01
+
+======== Epoch 27 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.697
+  Average training loss discriminator: 0.700
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.593
+  Test Loss: 3.969
+  Test took: 0:00:01
+
+======== Epoch 28 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.697
+  Average training loss discriminator: 0.700
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.604
+  Test Loss: 3.966
+  Test took: 0:00:01
+
+======== Epoch 29 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.698
+  Average training loss discriminator: 0.699
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.599
+  Test Loss: 4.111
+  Test took: 0:00:01
+
+======== Epoch 30 / 30 ========
+Training...
+  Batch    10  of    132.    Elapsed: 0:00:03.
+  Batch    20  of    132.    Elapsed: 0:00:07.
+  Batch    30  of    132.    Elapsed: 0:00:10.
+  Batch    40  of    132.    Elapsed: 0:00:14.
+  Batch    50  of    132.    Elapsed: 0:00:17.
+  Batch    60  of    132.    Elapsed: 0:00:21.
+  Batch    70  of    132.    Elapsed: 0:00:24.
+  Batch    80  of    132.    Elapsed: 0:00:28.
+  Batch    90  of    132.    Elapsed: 0:00:31.
+  Batch   100  of    132.    Elapsed: 0:00:35.
+  Batch   110  of    132.    Elapsed: 0:00:38.
+  Batch   120  of    132.    Elapsed: 0:00:42.
+  Batch   130  of    132.    Elapsed: 0:00:45.
+
+  Average training loss generetor: 0.697
+  Average training loss discriminator: 0.699
+  Training epcoh took: 0:00:46
+
+Running Test...
+  Accuracy: 0.591
+  Test Loss: 4.301
+  Test took: 0:00:01
+{'epoch': 1, 'Training Loss generator': 0.7286451479250734, 'Training Loss discriminator': 1.2422663799741052, 'Valid. Loss': 1.1376830339431763, 'Valid. Accur.': 0.724233983286908, 'Training Time': '0:00:48', 'Test Time': '0:00:01'}
+{'epoch': 2, 'Training Loss generator': 0.7213847041130066, 'Training Loss discriminator': 0.8653893064368855, 'Valid. Loss': 1.3776215314865112, 'Valid. Accur.': 0.6991643454038997, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+{'epoch': 3, 'Training Loss generator': 0.7040710620807878, 'Training Loss discriminator': 0.7215021130713549, 'Valid. Loss': 1.749290943145752, 'Valid. Accur.': 0.6880222841225627, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+{'epoch': 4, 'Training Loss generator': 0.7020103525031697, 'Training Loss discriminator': 0.7144744414271731, 'Valid. Loss': 1.9782159328460693, 'Valid. Accur.': 0.7186629526462396, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+{'epoch': 5, 'Training Loss generator': 0.6996516657598091, 'Training Loss discriminator': 0.7111243840419885, 'Valid. Loss': 2.2352848052978516, 'Valid. Accur.': 0.7214484679665738, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+{'epoch': 6, 'Training Loss generator': 0.6995805501937866, 'Training Loss discriminator': 0.7083016037940979, 'Valid. Loss': 2.277495861053467, 'Valid. Accur.': 0.7437325905292479, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+{'epoch': 7, 'Training Loss generator': 0.7020314818981922, 'Training Loss discriminator': 0.7076947020761895, 'Valid. Loss': 2.9989535808563232, 'Valid. Accur.': 0.6852367688022284, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+{'epoch': 8, 'Training Loss generator': 0.706281346805168, 'Training Loss discriminator': 0.7960144714875654, 'Valid. Loss': 2.297445297241211, 'Valid. Accur.': 0.6908077994428969, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+{'epoch': 9, 'Training Loss generator': 0.698730572606578, 'Training Loss discriminator': 0.707992025848591, 'Valid. Loss': 2.571751594543457, 'Valid. Accur.': 0.6935933147632312, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+{'epoch': 10, 'Training Loss generator': 0.6981266696344722, 'Training Loss discriminator': 0.7056068913503126, 'Valid. Loss': 2.694958448410034, 'Valid. Accur.': 0.7103064066852368, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+{'epoch': 11, 'Training Loss generator': 0.6985709026004329, 'Training Loss discriminator': 0.7042836993932724, 'Valid. Loss': 2.8578574657440186, 'Valid. Accur.': 0.7075208913649025, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+{'epoch': 12, 'Training Loss generator': 0.6989609152078629, 'Training Loss discriminator': 0.7032810833418008, 'Valid. Loss': 3.029552936553955, 'Valid. Accur.': 0.7019498607242339, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+{'epoch': 13, 'Training Loss generator': 0.6978541368787939, 'Training Loss discriminator': 0.7024534430467722, 'Valid. Loss': 3.1054434776306152, 'Valid. Accur.': 0.7075208913649025, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+{'epoch': 14, 'Training Loss generator': 0.6987896819006313, 'Training Loss discriminator': 0.7021113421880838, 'Valid. Loss': 3.186145544052124, 'Valid. Accur.': 0.7103064066852368, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+{'epoch': 15, 'Training Loss generator': 0.6983048432704174, 'Training Loss discriminator': 0.7015453378359476, 'Valid. Loss': 3.2744359970092773, 'Valid. Accur.': 0.713091922005571, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+{'epoch': 16, 'Training Loss generator': 0.6996234966949983, 'Training Loss discriminator': 0.7229063145139001, 'Valid. Loss': 2.4987573623657227, 'Valid. Accur.': 0.7158774373259053, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+{'epoch': 17, 'Training Loss generator': 0.7116468774549889, 'Training Loss discriminator': 0.9643780467185107, 'Valid. Loss': 0.6661022901535034, 'Valid. Accur.': 0.5766016713091922, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+{'epoch': 18, 'Training Loss generator': 0.7156528071923689, 'Training Loss discriminator': 0.9540600194172426, 'Valid. Loss': 1.771303415298462, 'Valid. Accur.': 0.5905292479108635, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+{'epoch': 19, 'Training Loss generator': 0.7031991906238325, 'Training Loss discriminator': 0.7129610975583395, 'Valid. Loss': 2.376718521118164, 'Valid. Accur.': 0.5988857938718662, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+{'epoch': 20, 'Training Loss generator': 0.7099728900374789, 'Training Loss discriminator': 0.7886991293141337, 'Valid. Loss': 2.1359753608703613, 'Valid. Accur.': 0.6016713091922006, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+{'epoch': 21, 'Training Loss generator': 0.7011437786347938, 'Training Loss discriminator': 0.7068296494809064, 'Valid. Loss': 2.5862770080566406, 'Valid. Accur.': 0.5988857938718662, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+{'epoch': 22, 'Training Loss generator': 0.6987661186492804, 'Training Loss discriminator': 0.7040176761872841, 'Valid. Loss': 2.964158058166504, 'Valid. Accur.': 0.596100278551532, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+{'epoch': 23, 'Training Loss generator': 0.6984131236871084, 'Training Loss discriminator': 0.702544447147485, 'Valid. Loss': 3.272947311401367, 'Valid. Accur.': 0.5905292479108635, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+{'epoch': 24, 'Training Loss generator': 0.6981486357522734, 'Training Loss discriminator': 0.7015719743389072, 'Valid. Loss': 3.4362494945526123, 'Valid. Accur.': 0.5988857938718662, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+{'epoch': 25, 'Training Loss generator': 0.697499365066037, 'Training Loss discriminator': 0.701136593114246, 'Valid. Loss': 3.6637816429138184, 'Valid. Accur.': 0.596100278551532, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+{'epoch': 26, 'Training Loss generator': 0.697152883717508, 'Training Loss discriminator': 0.7005231750733925, 'Valid. Loss': 3.774346351623535, 'Valid. Accur.': 0.5933147632311978, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+{'epoch': 27, 'Training Loss generator': 0.6973500725897875, 'Training Loss discriminator': 0.7000896023078398, 'Valid. Loss': 3.968848705291748, 'Valid. Accur.': 0.5933147632311978, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+{'epoch': 28, 'Training Loss generator': 0.6973367166338544, 'Training Loss discriminator': 0.6997118244568507, 'Valid. Loss': 3.9656195640563965, 'Valid. Accur.': 0.6044568245125348, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+{'epoch': 29, 'Training Loss generator': 0.6975060055653254, 'Training Loss discriminator': 0.6993740526112643, 'Valid. Loss': 4.111153602600098, 'Valid. Accur.': 0.5988857938718662, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+{'epoch': 30, 'Training Loss generator': 0.6970774219794706, 'Training Loss discriminator': 0.6991814099477999, 'Valid. Loss': 4.30123233795166, 'Valid. Accur.': 0.5905292479108635, 'Training Time': '0:00:46', 'Test Time': '0:00:01'}
+
+Training complete!
+Total training took 0:23:23 (h:mm:ss)

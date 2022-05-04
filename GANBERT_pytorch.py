@@ -41,8 +41,10 @@ if torch.cuda.is_available():
 #first get args
 cli_parser = argparse.ArgumentParser()
 cli_parser.add_argument("--unlabeled_ratio", type=float, required=True, help="ratio of unlabaled to labeled data")
+cli_parser.add_argument("--train_file", type=str, required=True, help="training data file")
 args=cli_parser.parse_args()
 print("Label ratio: ",args.unlabeled_ratio)
+print("training file: ",args.train_file)
 
 # If there's a GPU available...
 if torch.cuda.is_available():    
@@ -119,7 +121,7 @@ model_name = "bert-base-cased"
 # unlabeled_file = "./ganbert/data/unlabeled.tsv"
 # test_filename = "./ganbert/data/test.tsv"
 
-twitter_labeled_file = "./labeled_8000.csv"
+twitter_labeled_file = args.train_file #"./labeled_8000.csv"
 twitter_test_file = "./test.csv"
 
 label_list = ["UNK_UNK","ABBR_abb", "ABBR_exp", "DESC_def", "DESC_desc", 
