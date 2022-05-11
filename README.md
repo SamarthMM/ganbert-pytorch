@@ -1,6 +1,6 @@
 # Assignment 4: GAN-BERT Pytorch
 
-NOTE: Our Assignemnt is split into 2 repositories. This repository is for the Transfer Learning Experiments using Goemotions data.
+NOTE: Our Assignemnt is split into 2 repositories. This repository is for performing Semi_Supervised Learning using GAN-BERT architecture
 
 # Abstract
 
