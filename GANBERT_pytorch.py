@@ -512,7 +512,8 @@ for epoch_i in range(0, num_train_epochs):
         #  LOSS evaluation
         #---------------------------------
         # Generator's LOSS estimation
-        g_loss_d = -1 * torch.mean(torch.log(1 - D_fake_probs[:,-1] + epsilon))
+        #g_loss_d = -1 * torch.mean(torch.log(1 - D_fake_probs[:,-1] + epsilon))
+        g_loss_d =  torch.mean(torch.log(D_fake_probs[:,-1] + epsilon))
         g_feat_reg = torch.mean(torch.pow(torch.mean(D_real_features, dim=0) - torch.mean(D_fake_features, dim=0), 2))
         g_loss = g_loss_d + g_feat_reg
   
