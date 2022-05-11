@@ -51,7 +51,7 @@ python3 GANBERT_goemo.py --unlabeled_ratio <ratio> --train_file <train_file.csv>
 
 #For running on Twitter dataset with 12000 examples and 0.98 ratio and the output is saved into ganbert_12000_output.txt
 python3 GANBERT_goemo.py --unlabeled_ratio 0.98 --train_file goemo_train_12000.csv | tee ganbert_goemo_12000.txt
-
+```
 
 ## Plotting Graphs:
 ```bash
